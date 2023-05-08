@@ -1,0 +1,31 @@
+<div class="container" style="text-align: center">
+  <h3>Employee Registration</h3>
+
+  <form #addEmployee="ngForm" (ngSubmit)="submit(addEmployee)">
+    <div class="form-group">
+      <label for="name">Name</label><br />
+
+      <input type="text" name="name" class="form-control" ngModel />
+    </div>
+
+    <pre></pre>
+
+    <div class="form-group">
+      <label for="age">Age</label><br />
+
+      <input type="number" name="age" class="form-control" ngModel />
+    </div>
+
+    <pre></pre>
+
+    <div class="form-group">
+      <label for="company">Company</label><br />
+
+      <input type="text" name="company" class="form-control" ngModel />
+    </div>
+
+    <pre></pre>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
